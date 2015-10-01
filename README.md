@@ -1,6 +1,5 @@
-## My repo :+1:
-
-Blog '@wgoulart' in jekyll, main repo
+## William Goulart - Blog
+This repository is o my blog '@wgoulart' in jekyll :octocat:
 
 
 
