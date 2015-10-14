@@ -1,16 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>William Goulart - Front End Developer</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
+---
+layout: default
+---
 
-	<main id="main">
-		Hi i'm William Goulart <br> this is my blog where i write about: <br> Front-end <br> [html, css, sass and javascript]
-	</main>
-	<!-- ./main -->
-	
-</body>
-</html>
+<div class="archive-item">
+  <h1 class="page-heading">{{ post.date | date: "%Y" }}</h1>
+
+  <div class="archive-item">
+    <!-- {% for post in site.posts %}
+      <div class="archive-item">
+        <span class="post-date archive-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="archive-title"> {{ post.title }} </a>
+      </div>
+    {% endfor %} -->
+
+    {% for post in site.posts %}
+      {% capture currentyear %}{{ post.date | date: "%Y" }}{% endcapture %}
+        {% if currentyear != year %}
+          <h2 class="archive-year">{{ currentyear }}</h2>
+          {% capture year %}{{ currentyear }}{% endcapture %}
+        {% endif %}
+        <div class="archive-item">
+          <span class="post-date archive-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+          <a href="{{ post.url }}" class="archive-title"> {{ post.title }} </a>
+        </div>
+    {% endfor %}
+  </div>
+  
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <hr>
+</div>
+
+
+
+
+
