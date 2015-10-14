@@ -1,0 +1,20 @@
+<footer id="footer">
+  <div class="footer-social-media">
+    <ul class="social-media-list">
+      {% if site.github_username %}
+        <li>
+          <a href="https://github.com/{{ site.github_username }}"> <i class="fa fa-github"></i> <span class="username">{{ site.github_username }}</span></a>
+        </li>
+      {% endif %}
+      {% if site.twitter_username %}
+        <li>
+          <a href="https://twitter.com/{{ site.twitter_username }}"> <i class="fa fa-twitter"></i><span class="username">{{ site.twitter_username }}</span></a>
+        </li>
+      {% endif %}
+    </ul>
+  </div>
+  <div class="footer-copy">
+    <p class="text">&copy; {{ site.date }} {{ date }} </p>
+  </div>
+</footer>
+<!-- ./footer --> 
