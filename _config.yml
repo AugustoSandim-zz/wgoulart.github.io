@@ -1,20 +1,17 @@
 # Site settings
 title: William Goulart - Desenvolvedor Front-end
 email: williamgoulart1@hotmail.com
-description: "Hi there i'm William Goulart a Front-end Developer, This is my blog about web development with focus in Front End, I write about web,html,html5,css,css3,sass,scss,front-end"
+description: "Hi there i'm William Goulart a Front-end Developer, This is my blog about web development with focus in Front End, I write about web, html, html5, css, css3, sass, scss, front-end"
 
 # url's
 baseurl: "" # the subpath of your site, e.g. /blog/
 font-awesome-url: "/assets/font-awesome/css/font-awesome.min.css"
 url: "http://williamgoulart.com" # the base hostname & protocol for your site
 twitter_username: wgoulaart
-github_username:  wgoulaart
+github_username:  wgoulart
 
 # Build settings
 markdown: kramdown
 
 # Syntax highlighting
 highlighter: pygments
-
-
-

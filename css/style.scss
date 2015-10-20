@@ -12,7 +12,12 @@ $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.87;
 $base-line-height: 1.5;
 $spacing-unit:     30px;
-
+$color-background: #ffffff;
+$color-white: #ffffff;
+$color-text: #333333;
+$color-text-light: #666;
+$color-sub-header: #444444;
+$color-anchor: #F26698;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "base";
