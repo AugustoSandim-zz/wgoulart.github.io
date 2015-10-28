@@ -28,7 +28,7 @@ Este repositório tem o objetivo de concentrar todas as informações sobre o de
   ```sh
   $ jekyll server -w
   ```
-Agora você tem acesso ao blog em `http://127.0.0.0:4000/` 
+Agora você pode ver o blog rodando em `http://127.0.0.0:4000/` 
 
 ## Como contribuir
 1. Crie uma branch para a sua contribuição:
@@ -36,12 +36,8 @@ Agora você tem acesso ao blog em `http://127.0.0.0:4000/`
   ```sh
   git checkout -b 'sua-branch'
   ```
-
-2. Faça o commit com o seu post.
-      $ git add .
-      $ git commit -am 'post: Título do post'
-
-3. Faça o push do seu branch.
+2. Faça o push do seu branch.
       $ git push origin 'sua-branch'
 
-4. Crie um pull request através da interface web do GitHub.
+3. Crie um pull request através da interface web do GitHub.
+
