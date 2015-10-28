@@ -14,4 +14,4 @@ github_username:  wgoulart
 markdown: kramdown
 
 # Syntax highlighting
-highlighter: pygments
+highlighter: rouge
