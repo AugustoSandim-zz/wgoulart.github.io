@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 # About this Site
-=======
+
 # William Goulart - Blog
->>>>>>> 7c8ab91e5c6a32bc4d125a13878fd7ea5d6aa233
+
 Este repositório tem o objetivo de concentrar todas as informações sobre o desenvolvimento, Todas as sugestões e dúvidas serão realizadas de forma aberta através de [issues](https://github.com/wgoulart/wgoulart.github.io/issues). Qualquer contribuição é bem vinda.
 
 ## Primeiros passos
