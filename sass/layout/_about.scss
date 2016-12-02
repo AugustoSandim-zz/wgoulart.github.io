@@ -14,11 +14,13 @@
 		color: $darkgray;
 		vertical-align: top;
 
-		&:first-of-type {
+		&:first-of-type,
+		&:first-child {
 			padding-left: 0;
 		}
 
-		&:last-of-type {
+		&:last-of-type,
+		&:last-child {
 			padding-right: 0;
 		}
 	}

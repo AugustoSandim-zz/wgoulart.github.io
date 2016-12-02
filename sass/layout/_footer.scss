@@ -4,18 +4,29 @@
 .contact {
 	background: $black;
   padding: 0;
+
+  .headline-area {
+    color: $white;
+    
+    h6 {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+  }
+
 }
 
 .contact-area {
-	display: block;
 	padding-top: 30px;
 	font-size: 1rem;
 	text-align: left;
 
 	a {
-		display: block;
-		color: $white;
+		display: inline-block;
+    color: $white;
 		padding: 5px;
 		border: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
 	}
 }
