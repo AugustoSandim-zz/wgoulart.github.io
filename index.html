@@ -1,23 +1,112 @@
----
-layout: default
----
-<div class="archive">
-  <!-- {% for post in site.posts %}
-    <div class="archive-item">
-      <span class="post-date archive-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <a href="{{ post.url | prepend: site.baseurl }}" class="archive-title"> {{ post.title }} </a>
-    </div>
-  {% endfor %} -->
+<!DOCTYPE html>
+<html lang="en">
 
-  {% for post in site.posts %}
-    {% capture currentyear %}{{ post.date | date: "%Y" }}{% endcapture %}
-      {% if currentyear != year %}
-        <h2 class="archive-year">{{ currentyear }}</h2>
-        {% capture year %}{{ currentyear }}{% endcapture %}
-      {% endif %}
-      <div class="archive-item">
-        <span class="archive-date">{{ post.date | date: "%B %-d, %Y" }}</span>
-        <a href="{{ post.url }}" class="archive-title"> {{ post.title }} </a>
-      </div>
-  {% endfor %}
-</div>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>William Goulart - Front-end Developer</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Source+Sans+Pro:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<h1 class="header-title"><small>HELLO.</small>I'm William Goulart, brazilian front-end developer with interinsting in UX/UI/Design</h1>
+		</div>
+	</header>
+	<!-- ./header -->
+	
+	<section class="skills">
+		<div class="wrapper">
+			<div class="headline-area">
+				<h6>Skills</h6>
+			</div>
+			<div class="contact-area">
+				<h2 class="skills__itens">
+					<span class="selection">HTML5</span>,
+					<span class="selection">CSS3</span>, <br>
+					<span class="selection">SASS</span> with <span class="selection">BEM, OOCSS & SMACSS</span> <br>
+					<span class="selection">JavaScript/JQuery</span>,<br>
+					UX,UI,Prototyping,<br>
+					SVN & Git.
+				</h2>
+			</div>
+		</div>
+	</section>
+	<!-- ./skills -->
+
+	<section class="portfolio">
+			<div class="item">
+				<img src="img/randomQuote.jpg" alt="Random Quote Twitter">
+				<div class="desc">
+					<a href="https://codepen.io/wgoulaart/full/YWPLeL/" target="_blank">
+						<h3>Random Quote Machine</h3>
+						<p>Generate and Share quotes.</p>
+					</a>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/wikipedia-viewr.jpg" alt="Wikipedia Viewr Search">
+				<div class="desc">
+					<a href="https://codepen.io/wgoulaart/pen/qNbZbm" target="_blank">
+						<h3>Wikipedia Viwer</h3>
+					</a>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/localweather.jpg" alt="LOCAL WEATHER">
+				<div class="desc">
+					<a href="https://codepen.io/anon/pen/ObzovY" target="_blank">
+						<h3>LOCAL WEATHER</h3>
+					</a>
+				</div>
+			</div>
+	</section>
+	<!-- ./portfolio -->
+
+	<section class="about">
+		<div class="wrapper">
+			<div class="about__item">
+				<h2 class="about__title">Education</h1>
+			<p>I'm student of Systems Internet at Instituto Federal do Mato Grosso do Sul - Campo Grande </p>
+			<p>I'm learned about HTML, CSS, JavaScript, OO, PHP, SQL, MVC and more.</p>
+		</div>
+		<div class="about__item">
+			<h2 class="about__title">Career</h1>
+			<p>I'm front-end develper at - <a href="http://youzoom.com.br" target="_blank">Youzoom Soluções Web</a></p>
+		</div>
+		<div class="about__item">
+			<h2 class="about__title">Languages</h1>
+			<p>Português - Native</p>
+			<p>English - Basic</p>
+		</div>
+	</div>
+	</section>
+	<!-- ./about -->
+
+	<footer class="contact">
+		<div class="wrapper">
+			<div class="headline-area">
+				<h6>Contact</h6>
+			</div>
+			<div class="contact-area">
+				<a href="https://github.com/wgoulart" target="_blank">Github</a>
+				<a href="https://www.facebook.com/wgoulaart" target="_blank">Facebook</a>
+				<a href="https://twitter.com/wgoulaart" target="_blank">Twitter</a>
+				<a href="mailto:williamgoulart1@hotmail.com">Email</a>
+			</div>
+		</div>
+	</footer>
+	<!-- ./contact -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+		window.jQuery || document.write('<script src="js/jquery-2.1.4.min.js"><\/script>')
+	</script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

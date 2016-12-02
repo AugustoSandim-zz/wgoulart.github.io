@@ -1,1 +1,0 @@
-var randonQuoteText=document.querySelector(".randon-quote-text"),btnNewQuote=document.querySelector(".randon-quote-button");btnNewQuote.addEventListener("click",function(t){randonQuoteText.innerHTML=quotesJson[Math.floor(2*Math.random())],t.preventDefault()}),$(document).ready(function(){var t=$(".randon-quote-button")});

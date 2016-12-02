@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.about {
+	font-size: 0;
+	padding: 100px 0;
+
+	&__item {
+		display: inline-block;
+		font-size: 1rem;
+		width: 33%;
+		padding: 0 20px;
+		color: $darkgray;
+		vertical-align: top;
+
+		&:first-of-type {
+			padding-left: 0;
+		}
+
+		&:last-of-type {
+			padding-right: 0;
+		}
+	}
+
+	&__title {
+		font-size: 1.5rem;
+		color: $brand-color;
+	}
+}

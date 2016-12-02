@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.contact {
+	background: $black;
+  padding: 0;
+}
+
+.contact-area {
+	display: block;
+	padding-top: 30px;
+	font-size: 1rem;
+	text-align: left;
+
+	a {
+		display: block;
+		color: $white;
+		padding: 5px;
+		border: 0;
+	}
+}

@@ -1,0 +1,165 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+
+body {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+h1 {
+	font-size: 3.5rem;
+}
+
+h6 {
+	padding-top: 30px;
+	font-size: 1.2rem;
+
+	&:after {
+		display: block;
+		content: '';
+		height: 1px;
+		width: 40px;
+		background: $darkgray;
+		margin-top: 30px;
+	}
+}
+
+a {
+	color: $darkgray;
+	text-decoration: none;
+	border-bottom: 1px solid $darkgray;
+	cursor: pointer;
+
+	&:hover {
+		text-decoration: none;
+		border-bottom-color: $brand-color;
+	}
+}
+
+::selection {
+	color: $white;
+	background-color: $darkgray;
+}
+
+::-moz-selection {
+	color: $white;
+	background-color: $darkgray;
+}
+
+.selection {
+	color: $brand-color;
+}
+
+.wrapper {
+	display: block;
+	max-width: 1160px;
+	padding: 0 20px;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+.headline-area {
+	display: block;
+
+	.headline--text {
+		font-size: 2rem;
+		font-size: 1.5rem;
+		color: #e50050;
+	}
+}
+
+.skills {
+	padding: 100px 0;
+	background: #f5f5f5;
+}
+
+@media (max-width: 1400px) {
+	.item {
+		h3 {
+			font-size: 2rem;
+		}
+
+		p {
+			font-size: 1.2rem;
+		}
+	}
+}
+
+@media (max-width: 1150px) {
+	.item {
+		width: 100%;
+		max-width: 700px;
+		margin: 15px 0;
+	}
+}
+
+@media (max-width: 1100px) {
+	h1 {
+		font-size: 3rem;
+	}
+}
+
+@media (max-width: 950px) {
+	.part {
+		h1 {
+			font-size: 2rem;
+		}
+	}
+
+	.headline-area {
+		width: 100%;
+
+		h6 {
+			padding-top: 0;
+			margin-top: 0;
+		}
+	}
+
+	.contact-area {
+		width: 100%;
+	}
+}
+
+@media (max-width: 800px) {
+	.part {
+		width: 100%;
+		max-width: 600px;
+		padding: 0;
+	}
+}
+
+@media (max-width: 710px) {
+	.item {
+		margin: 0;
+	}
+}
+
+@media (max-width: 650px) {
+	h1 {
+		font-size: 1.8rem;
+	}
+
+	.part {
+		h1 {
+			font-size: 1.5rem;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.item {
+		h3 {
+			font-size: 1.4rem;
+
+			&:after {
+				margin-top: 10px;
+			}
+		}
+
+		p {
+			font-size: 1rem;
+		}
+	}
+}
